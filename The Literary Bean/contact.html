@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Location | Literary Bean</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #FEFAF5;
+        }
+        .navbar {
+            background: #FFFFFFE6;
+            backdrop-filter: blur(12px);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #EADBC6;
+        }
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #3E2C1F;
+        }
+        .contact-container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .info-card {
+            background: white;
+            border-radius: 48px;
+            padding: 2rem;
+            box-shadow: 0 20px 30px -15px rgba(0,0,0,0.05);
+        }
+        .info-card h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: #4C2A18;
+        }
+        .contact-detail {
+            margin: 1rem 0;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+        .map-placeholder {
+            background: #D9C5B3;
+            border-radius: 48px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #4C2A18;
+            text-align: center;
+            flex-direction: column;
+        }
+        .btn-send {
+            background: #C47A44;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 60px;
+            color: white;
+            font-weight: bold;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+        footer {
+            background: #2C2418;
+            color: #E5D9CC;
+            text-align: center;
+            padding: 2rem;
+        }
+        @media (max-width: 800px) {
+            .contact-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo"><h1>&#128214; The Literary Bean</h1></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="booklist.html">Books</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Visit</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="contact-container">
+    <div class="info-card">
+        <h2>📍 find our nook</h2>
+        <div class="contact-detail">&#127968; 221B Baker Street, London (Literary Quarter)</div>
+        <div class="contact-detail">&#128222; +44 20 7946 0138</div>
+        <div class="contact-detail">&#9993; hello@literarybean.com</div>
+        <div class="contact-detail">&#9200; Mon - Sun: 8am – 10pm</div>
+        <button class="btn-send" onclick="alert('We’ll reply within 24h! ✨')">Send us a message</button>
+    </div>
+    <div class="info-card">
+        <h2>&#128204; cozy map</h2>
+        <div class="map-placeholder">
+            &#128506; &#10024; <strong> hidden gem near Hyde Park</strong><br>
+            ↳ between the bookshops & chestnut trees
+            <div style="margin-top:1rem; font-size:0.8rem;">(interactive map loads locally — come visit us!)</div>
+        </div>
+        <p style="margin-top: 1rem;">Free wifi • wheelchair accessible • pet-friendly patio</p>
+    </div>
+</div>
+
+<footer>
+    <p>We await your story. &#128214;&#9749;</p>
+</footer>
+</body>
+</html>

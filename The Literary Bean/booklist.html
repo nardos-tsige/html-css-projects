@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List | Literary Bean</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #FEFAF5;
+            color: #2D2A24;
+        }
+        .navbar {
+            background: #FFFFFFE6;
+            backdrop-filter: blur(12px);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #EADBC6;
+        }
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #4C3B2C;
+        }
+        .nav-links a:hover { color: #C47A44; }
+        .books-hero {
+            background: #EADBC6;
+            padding: 2rem;
+            text-align: center;
+        }
+        .books-grid {
+            max-width: 1300px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .book-card {
+            background: white;
+            border-radius: 32px;
+            overflow: hidden;
+            transition: 0.2s;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -12px rgba(0,0,0,0.15);
+        }
+        .book-img {
+            height: 220px;
+            background: linear-gradient(145deg, #D9C2A7, #C6AD8C);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        .book-info {
+            padding: 1.5rem;
+        }
+        .book-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+        .book-author {
+            color: #A87B54;
+            margin: 0.4rem 0;
+            font-style: italic;
+        }
+        .price-tag {
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #C47A44;
+        }
+        footer {
+            background: #2C2418;
+            color: #E5D9CC;
+            text-align: center;
+            padding: 2rem;
+        }
+        .btn-small {
+            background: #C47A44;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            color: white;
+            margin-top: 0.8rem;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo"><h1>&#128214; The Literary Bean</h1></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="booklist.html">Books</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Visit</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="books-hero">
+    <h1>&#128218; staff picks & bestsellers</h1>
+    <p>Curated fiction, poetry & essays — with a coffee in hand.</p>
+</div>
+
+<div class="books-grid">
+    <div class="book-card"><div class="book-img">&#128216;</div><div class="book-info"><div class="book-title">The Midnight Library</div><div class="book-author">Matt Haig</div><div class="price-tag">$16.99</div><button class="btn-small" onclick="alert('Added to your reading list ✨')">reserve a copy</button></div></div>
+    <div class="book-card"><div class="book-img">&#128214;</div><div class="book-info"><div class="book-title">Circe</div><div class="book-author">Madeline Miller</div><div class="price-tag">$18.50</div><button class="btn-small" onclick="alert('Check availability at our shop 📚')">reserve</button></div></div>
+    <div class="book-card"><div class="book-img">&#127807;</div><div class="book-info"><div class="book-title">Braiding Sweetgrass</div><div class="book-author">Robin Wall Kimmerer</div><div class="price-tag">$19.95</div><button class="btn-small" onclick="alert('We have signed copies!')">reserve</button></div></div>
+    <div class="book-card"><div class="book-img">&#9749;</div><div class="book-info"><div class="book-title">Before the Coffee Gets Cold</div><div class="book-author">Toshikazu Kawaguchi</div><div class="price-tag">$14.99</div><button class="btn-small" onclick="alert('Perfect with a latte')">reserve</button></div></div>
+    <div class="book-card"><div class="book-img">&#128220;</div><div class="book-info"><div class="book-title">The Name of the Rose</div><div class="book-author">Umberto Eco</div><div class="price-tag">$15.5</div><button class="btn-small" onclick="alert('Mystery & history')">reserve</button></div></div>
+    <div class="book-card"><div class="book-img">&#127917;</div><div class="book-info"><div class="book-title">The Seven Moons of Maali Almeida</div><div class="book-author">Shehan Karunatilaka</div><div class="price-tag">$17.2</div><button class="btn-small" onclick="alert('Winner of the Booker Prize')">reserve</button></div></div>
+</div>
+
+<footer>
+    <p>10% off for book club members — ask our barista &#128214;</p>
+</footer>
+</body>
+</html>

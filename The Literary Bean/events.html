@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Literary Bean</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #FEF9F2;
+        }
+        .navbar {
+            background: #FFFFFFE6;
+            backdrop-filter: blur(12px);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #EADBC6;
+        }
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #3E2C1F;
+        }
+        .events-header {
+            background: linear-gradient(120deg, #E6D5BD, #F0E2D0);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .event-list {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .event-item {
+            background: white;
+            border-radius: 48px;
+            margin-bottom: 1.8rem;
+            padding: 1.8rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+            transition: 0.2s;
+        }
+        .event-date {
+            background: #C47A44;
+            color: white;
+            border-radius: 60px;
+            padding: 0.5rem 1.2rem;
+            font-weight: bold;
+            min-width: 100px;
+            text-align: center;
+        }
+        .event-detail h3 {
+            font-size: 1.6rem;
+        }
+        .btn-reg {
+            background: #2C2418;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.4rem;
+            border-radius: 60px;
+            margin-left: auto;
+            cursor: pointer;
+        }
+        footer {
+            background: #2C2418;
+            color: #E5D9CC;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) { .event-item { flex-direction: column; align-items: flex-start; } .btn-reg { margin-left: 0; margin-top: 1rem; } }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo"><h1>&#128214; The Literary Bean</h1></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="booklist.html">Books</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Visit</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="events-header">
+    <h1>&#127914; upcoming gatherings</h1>
+    <p>poetry, stories, workshops — come as you are</p>
+</div>
+
+<div class="event-list">
+    <div class="event-item"><div class="event-date">May 12<br>7pm</div><div class="event-detail"><h3>Open Mic Poetry Night</h3><p>Share your verses or listen — hosted by local poet Maya Green.</p></div><button class="btn-reg" onclick="alert('Reserve your spot! Free entry')">RSVP</button></div>
+    <div class="event-item"><div class="event-date">May 20<br>3pm</div><div class="event-detail"><h3>Bookbinding Workshop</h3><p>Create your own leather journal. Materials included.</p></div><button class="btn-reg" onclick="alert('$35, limited seats')">Register</button></div>
+    <div class="event-item"><div class="event-date">June 5<br>6pm</div><div class="event-detail"><h3>Author Talk: Fantasy Realms</h3><p>With Elara Vance, author of “The Inkweaver's Gift”.</p></div><button class="btn-reg" onclick="alert('Free with any purchase')">Save Seat</button></div>
+    <div class="event-item"><div class="event-date">June 15<br>10am</div><div class="event-detail"><h3>Sunday Book Club</h3><p>Discussing “Piranesi” by Susanna Clarke. Coffee included.</p></div><button class="btn-reg" onclick="alert('Join the club!')">Join</button></div>
+</div>
+
+<footer>
+    <p>All events happen at our 221B Baker Street location.</p>
+</footer>
+</body>
+</html>
